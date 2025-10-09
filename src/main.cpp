@@ -4,7 +4,7 @@
 #include "member4.h"
 
 static void printMenu() {
-  Serial.println("\n0=Blink  1=Sum  2=Multiply");
+  Serial.println("\n0 = Blink   1 = Sum   2 = Multiply");
 }
 
 void setup() {
@@ -15,17 +15,16 @@ void setup() {
 
 void loop() {
   if (!Serial.available()) return;
-  char c = Serial.read();
-  if (c=='\r' || c=='\n') return;
 
+  char c = Serial.read();
+  if (c == '\r' || c == '\n') return; 
   switch (c) {
-    case '0': member1_blink();      break;    //Blinki Blink
-    case '1': member3_sum();        break;    // Member 3 handles reading a,b + prints result
-    case '2': member4_multiply();   break;    // Member 4 handles reading a,b + prints result
+    case '0': member1_blink();      break;    // blinky blink
+    case '1': member3_sum();        break;    // Button 1 for sum funtion
+    case '2': member4_multiply();   break;    // Button 2 for multiply
     default:  Serial.println("Invalid choice");
   }
 
-  // clear rest of the line and reprint menu
   while (Serial.available()) Serial.read();
   printMenu();
 }
