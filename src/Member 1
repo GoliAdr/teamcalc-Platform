@@ -1,3 +1,5 @@
+#include <Arduino.h>
+
 // Blink function for Arduino
 void blink(int pin, int delayTime) {
   digitalWrite(pin, HIGH);  // Turn LED on
@@ -13,5 +15,4 @@ void setup() {
 
 void loop() {
   blink(13, 500);           // Blink LED every 500 milliseconds
-  ///
 }
