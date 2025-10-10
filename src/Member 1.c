@@ -1,3 +1,5 @@
+#include <Arduino.h>
+
 // Blink function for Arduino
 void blink(int pin, int delayTime) {
   digitalWrite(pin, HIGH);  // Turn LED on
