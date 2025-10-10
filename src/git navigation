@@ -8,3 +8,5 @@ git commit -m "name of commit" = commit changes
 git push -u origin {branch} = push your commits to remote repo name of branch 
 
 git switch {branch} = change to different branch
+
+{} is placeholder for name of branch DO NOT WRITE BRACETS!
