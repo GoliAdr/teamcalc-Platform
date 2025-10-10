@@ -3,6 +3,8 @@
 #include "member3.h"
 #include "member4.h"
 
+void member4_multiply();
+
 static void printMenu() {
   Serial.println("\n0=Blink  1=Sum  2=Multiply");
 }
@@ -28,4 +30,9 @@ void loop() {
   // clear rest of the line and reprint menu
   while (Serial.available()) Serial.read();
   printMenu();
+}
+
+member4_multiply() {
+  Serial.print("give me numbers");
+  //to do
 }
