@@ -1,5 +1,7 @@
 git clone "https://" = clone repo
 
+git pull = to pull changes
+
 git status = status
 git add "name" = add files or use . for everything
 git commit -m "name of commit" = commit changes 
