@@ -1,3 +1,10 @@
+git clone "https://" = clone repo
+
+git pull = to pull changes
+
 git status = status
 git add "name" = add files or use . for everything
 git commit -m "name of commit" = commit changes 
+git push -u origin {branch} = push your commits to remote repo name of branch 
+
+git switch {branch} = change to different branch
