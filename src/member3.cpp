@@ -1,5 +1,6 @@
 #include <Arduino.h>
 #include <string.h>
+#include "member3.h"
 
 String get_string(String str);
 
